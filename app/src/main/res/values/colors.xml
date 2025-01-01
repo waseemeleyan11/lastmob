@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryLight">#C5CAE9</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Background colors -->
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorSurface">#FFFFFF</color>
+
+    <!-- Text colors -->
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorTextHint">#BDBDBD</color>
+
+    <!-- Chart colors -->
+    <color name="chartColor1">#FFA000</color>
+    <color name="chartColor2">#7CB342</color>
+    <color name="chartColor3">#29B6F6</color>
+    <color name="chartColor4">#FF5252</color>
+    <color name="chartColor5">#9C27B0</color>
+
+    <!-- Status colors -->
+    <color name="colorSuccess">#4CAF50</color>
+    <color name="colorError">#F44336</color>
+    <color name="colorWarning">#FFC107</color>
+    <color name="colorInfo">#2196F3</color>
+
+    <!-- Gradient colors -->
+    <color name="gradientStart">#3F51B5</color>
+    <color name="gradientCenter">#5C6BC0</color>
+    <color name="gradientEnd">#7986CB</color>
+
+    <!-- Overlay colors -->
+    <color name="colorOverlayLight">#33FFFFFF</color>
+    <color name="colorOverlayDark">#66000000</color>
+</resources>
