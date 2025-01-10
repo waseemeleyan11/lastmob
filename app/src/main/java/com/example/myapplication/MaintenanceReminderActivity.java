@@ -66,7 +66,7 @@ public class MaintenanceReminderActivity extends AppCompatActivity {
         });
 
         switchPushNotifications.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            // TODO: Implement push notification settings
+            // TODO: Implement push notification setting
         });
 
         switchEmailNotifications.setOnCheckedChangeListener((buttonView, isChecked) -> {

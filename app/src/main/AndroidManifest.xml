@@ -13,7 +13,26 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpenseTrackingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CarOwnerDashboardActivity"
+            android:exported="false" />
+        <activity
             android:name=".MaintenanceReminderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

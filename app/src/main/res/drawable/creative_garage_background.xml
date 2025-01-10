@@ -1,0 +1,59 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1080dp"
+    android:height="1920dp"
+    android:viewportWidth="1080"
+    android:viewportHeight="1920">
+  <path
+      android:pathData="M0,0h1080v1920h-1080z"
+      android:fillColor="#2C3E50"/>
+  <!-- Garage floor -->
+  <path
+      android:pathData="M0,1400h1080v520h-1080z"
+      android:fillColor="#34495E"/>
+  <!-- Garage door -->
+  <path
+      android:pathData="M100,300h880v1100h-880z"
+      android:fillColor="#7F8C8D"/>
+  <!-- Garage door panels -->
+  <path
+      android:pathData="M120,320h840v260h-840z"
+      android:fillColor="#95A5A6"/>
+  <path
+      android:pathData="M120,600h840v260h-840z"
+      android:fillColor="#95A5A6"/>
+  <path
+      android:pathData="M120,880h840v260h-840z"
+      android:fillColor="#95A5A6"/>
+  <path
+      android:pathData="M120,1160h840v220h-840z"
+      android:fillColor="#95A5A6"/>
+  <!-- Car silhouette -->
+  <path
+      android:pathData="M300,1200 L380,1100 L700,1100 L780,1200 L820,1200 L820,1400 L260,1400 L260,1200 Z"
+      android:fillColor="#E74C3C"/>
+  <!-- Car windows -->
+  <path
+      android:pathData="M420,1130 L460,1080 L620,1080 L660,1130 Z"
+      android:fillColor="#3498DB"/>
+  <!-- Car wheels -->
+  <path
+      android:pathData="M380,1320a60,60 0 1,0 120,0a60,60 0 1,0 -120,0"
+      android:fillColor="#2C3E50"/>
+  <path
+      android:pathData="M580,1320a60,60 0 1,0 120,0a60,60 0 1,0 -120,0"
+      android:fillColor="#2C3E50"/>
+  <!-- Toolbox -->
+  <path
+      android:pathData="M100,1500h200v100h-200z"
+      android:fillColor="#E67E22"/>
+  <path
+      android:pathData="M120,1520h160v60h-160z"
+      android:fillColor="#D35400"/>
+  <!-- Light fixture -->
+  <path
+      android:pathData="M500,50 L580,50 L560,100 L520,100 Z"
+      android:fillColor="#F1C40F"/>
+  <path
+      android:pathData="M510,100 L570,100 L590,300 L490,300 Z"
+      android:fillColor="#F39C12"/>
+</vector>

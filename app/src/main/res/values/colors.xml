@@ -36,4 +36,6 @@
     <!-- Overlay colors -->
     <color name="colorOverlayLight">#33FFFFFF</color>
     <color name="colorOverlayDark">#66000000</color>
+    <color name="textColorPrimary">#2C3E50</color>
+    <color name="textColorSecondary">#7F8C8D</color>
 </resources>
