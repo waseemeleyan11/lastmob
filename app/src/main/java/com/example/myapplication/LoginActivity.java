@@ -30,7 +30,8 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         binding.tvRegister.setOnClickListener(v -> {
-            // TODO: Implement registration activity navigation
+            Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+            startActivity(intent);
             Toast.makeText(LoginActivity.this, "Register clicked", Toast.LENGTH_SHORT).show();
         });
     }
@@ -70,9 +71,9 @@ public class LoginActivity extends AppCompatActivity {
 
         // TODO: Implement actual login logic here
         // For demo purposes, we'll just show a toast and navigate to the main activity
-//        Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show();
-//        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-//        startActivity(intent);
+        Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(LoginActivity.this, CarOwnerDashboardActivity.class);
+        startActivity(intent);
         finish();
     }
 }

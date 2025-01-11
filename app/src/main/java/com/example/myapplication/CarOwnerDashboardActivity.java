@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,31 +35,19 @@ public class CarOwnerDashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_car_owner_dashboard);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
+        initToolbar();
         initViews();
+        initListeners();
         setupRecyclerView();
         loadCarDetails();
         loadUpcomingMaintenance();
         setupExpenseChart();
 
-        FloatingActionButton fabAddMaintenance = findViewById(R.id.fabAddMaintenance);
-        fabAddMaintenance.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // TODO: Implement add new maintenance functionality
-                Toast.makeText(CarOwnerDashboardActivity.this, "Add new maintenance clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
+    }
 
-        findViewById(R.id.ivNotifications).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // TODO: Implement notifications functionality
-                Toast.makeText(CarOwnerDashboardActivity.this, "Notifications clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
+    private void initToolbar() {
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
     }
 
     private void initViews() {
@@ -70,6 +59,20 @@ public class CarOwnerDashboardActivity extends AppCompatActivity {
         pieChartExpenses = findViewById(R.id.pieChartExpenses);
     }
 
+    private void initListeners() {
+        FloatingActionButton fabAddMaintenance = findViewById(R.id.fabAddMaintenance);
+        fabAddMaintenance.setOnClickListener(this::onAddMaintenanceClicked);
+        findViewById(R.id.ivNotifications).setOnClickListener(this::onNotificationsClicked);
+    }
+
+    private void onAddMaintenanceClicked(View v) {
+        Toast.makeText(this, "Add new maintenance clicked", Toast.LENGTH_SHORT).show();
+    }
+
+    private void onNotificationsClicked(View v) {
+        Toast.makeText(this, "Notifications clicked", Toast.LENGTH_SHORT).show();
+    }
+
     private void setupRecyclerView() {
         maintenanceItems = new ArrayList<>();
         maintenanceAdapter = new UpcomingMaintenanceAdapter(maintenanceItems);
@@ -78,14 +81,12 @@ public class CarOwnerDashboardActivity extends AppCompatActivity {
     }
 
     private void loadCarDetails() {
-        // TODO: Replace with actual data from database
         tvCarModel.setText("Model: Toyota Camry");
         tvCarYear.setText("Year: 2019");
         tvMileage.setText("Mileage: 35,000 miles");
     }
 
     private void loadUpcomingMaintenance() {
-        // TODO: Replace with actual data from database
         maintenanceItems.add(new MaintenanceItem("Oil Change", "Due in 500 miles"));
         maintenanceItems.add(new MaintenanceItem("Tire Rotation", "Due in 2,000 miles"));
         maintenanceItems.add(new MaintenanceItem("Brake Inspection", "Due in 5,000 miles"));
@@ -93,7 +94,6 @@ public class CarOwnerDashboardActivity extends AppCompatActivity {
     }
 
     private void setupExpenseChart() {
-        // TODO: Replace with actual data from database
         List<PieEntry> entries = new ArrayList<>();
         entries.add(new PieEntry(300f, "Oil Changes"));
         entries.add(new PieEntry(500f, "Tires"));
@@ -114,4 +114,3 @@ public class CarOwnerDashboardActivity extends AppCompatActivity {
         tvTotalExpenses.setText("Total Expenses: $1,100");
     }
 }
-

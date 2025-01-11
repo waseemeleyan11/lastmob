@@ -59,6 +59,8 @@ dependencies {
 // Retrofit and Gson for network requests
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.gson)
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
 //    implementation(libs.gson)
 
     // Testing

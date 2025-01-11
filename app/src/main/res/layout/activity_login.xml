@@ -116,14 +116,6 @@
                 android:layout_marginTop="16dp"
                 android:text="@string/don_t_have_an_account_register_here"
                 android:textColor="@color/colorPrimary" />
-            <TextView
-                android:id="@+id/ForgotPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:text="@string/forgotpassword"
-                android:textColor="@color/colorPrimary" />
 
         </LinearLayout>
 

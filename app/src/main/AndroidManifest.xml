@@ -13,7 +13,7 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name=".SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".ExpenseTrackingActivity"
@@ -27,9 +27,30 @@
         <activity
             android:name=".MaintenanceReminderActivity"
             android:exported="false" />
+
         <activity
-            android:name=".ForgotPasswordActivity"
+            android:name=".SimpleGarageDashboardActivity"
             android:exported="false" />
+
+        <activity android:name=".AddCustomerActivity"
+            android:exported="false"/>
+
+
+        <activity android:name=".AddCarDetailsActivity"
+            android:exported="false"/>
+        <activity android:name=".ScheduleMaintenanceActivity"
+            android:exported="false"/>
+        <activity android:name=".TrackOngoingServicesActivity"
+            android:exported="false"/>
+
+        <activity android:name=".ExpensesReportActivity"
+            android:exported="false"/>
+        <activity android:name=".FeedbackActivity"
+            android:exported="false"/>
+        <activity android:name=".UserSettingsActivity"
+            android:exported="false"/>
+        <activity android:name=".HelpSupportActivity"
+            android:exported="false"/>
 
         <activity
             android:name=".LoginActivity"

@@ -33,12 +33,11 @@ public class ExpenseTrackingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.car_expense);
 
         etServiceType = findViewById(R.id.etServiceType);
         etCost = findViewById(R.id.etCost);
         btnAddExpense = findViewById(R.id.btnAddExpense);
-        fabRefresh = findViewById(R.id.fabRefresh);
         pieChart = findViewById(R.id.pieChart);
 
         expenses = new HashMap<>();
