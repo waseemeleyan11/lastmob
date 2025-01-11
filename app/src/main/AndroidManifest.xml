@@ -51,9 +51,14 @@
             android:exported="false"/>
         <activity android:name=".HelpSupportActivity"
             android:exported="false"/>
+        <activity android:name=".UserDashboardActivity"
+            android:exported="false"/>
+        <activity android:name=".LoginActivity"
+            android:exported="false"/>
+
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".AdminDashboardActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

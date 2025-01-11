@@ -69,12 +69,31 @@ public class LoginActivity extends AppCompatActivity {
         String email = binding.etEmail.getText().toString().trim();
         String password = binding.etPassword.getText().toString().trim();
 
-        // TODO: Implement actual login logic here
-        // For demo purposes, we'll just show a toast and navigate to the main activity
-        Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(LoginActivity.this, CarOwnerDashboardActivity.class);
-        startActivity(intent);
-        finish();
+        // Simulate checking credentials and getting the role
+        String role = getUserRole(email, password);  // You need to implement this method
+
+        if ("admin".equals(role)) {
+            Toast.makeText(this, "Login successful - Admin", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(LoginActivity.this, AdminDashboardActivity.class);
+            startActivity(intent);
+            finish();
+        } else if ("user".equals(role)) {
+            Toast.makeText(this, "Login successful - User", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(LoginActivity.this, UserDashboardActivity.class);
+            startActivity(intent);
+            finish();
+        } else {
+            Toast.makeText(this, "Login failed", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private String getUserRole(String email, String password) {
+        // TODO: Implement your logic to check credentials and return the role
+        // For demonstration, returning "user" or "admin" based on email
+        if ("admin@example.com".equals(email)) {
+            return "admin";
+        } else {
+            return "user";
+        }
     }
 }
-
