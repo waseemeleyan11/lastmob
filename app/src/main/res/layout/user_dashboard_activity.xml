@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Dashboard"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="24dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnExpenseTracking"
+                style="@style/DashboardButton"
+                android:text="Expense Tracking"
+                android:onClick="onButtonClick"
+                app:icon="@drawable/ic_time"/>
+
+            />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnServiceHistory"
+                style="@style/DashboardButton"
+                android:text="Service History"
+                android:onClick="onButtonClick"
+                app:icon="@drawable/ic_car"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCarOwnerDashboard"
+                style="@style/DashboardButton"
+                android:text="Car Owner Dashboard"
+                android:onClick="onButtonClick"
+                app:icon="@drawable/ic_add_car"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMaintenanceReminder"
+                style="@style/DashboardButton"
+                android:text="Maintenance Reminder"
+                android:onClick="onButtonClick"
+                app:icon="@drawable/ic_notifications"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSimpleGarageDashboard"
+                style="@style/DashboardButton"
+                android:text="Simple Garage"
+                android:onClick="onButtonClick"
+                app:icon="@drawable/ic_service_type"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddCustomer"
+                style="@style/DashboardButton"
+                android:text="Add Customer"
+                android:onClick="onButtonClick"
+                app:icon="@drawable/ic_add"/>
+
+        </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

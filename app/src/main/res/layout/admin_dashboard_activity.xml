@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background_admin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Dashboard"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="24dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddCarDetails"
+                style="@style/AdminDashboardButton"
+                android:text="Add Car Details"
+                android:onClick="onButtonClick"
+                app:icon="@drawable/ic_schedule"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnScheduleMaintenance"
+                style="@style/AdminDashboardButton"
+                android:text="Schedule Maintenance"
+                android:onClick="onButtonClick"
+                app:icon="@drawable/ic_schedule"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTrackOngoingServices"
+                style="@style/AdminDashboardButton"
+                android:text="Track Ongoing Services"
+                android:onClick="onButtonClick"
+                app:icon="@drawable/ic_schedule"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnExpensesReport"
+                style="@style/AdminDashboardButton"
+                android:text="Expenses Report"
+                android:onClick="onButtonClick"
+                app:icon="@drawable/ic_add_car"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFeedback"
+                style="@style/AdminDashboardButton"
+                android:text="Feedback"
+                android:onClick="onButtonClick"
+                app:icon="@drawable/ic_car_simple"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUserSettings"
+                style="@style/AdminDashboardButton"
+                android:text="User Settings"
+                android:onClick="onButtonClick"
+                app:icon="@drawable/ic_settings"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHelpSupport"
+                style="@style/AdminDashboardButton"
+                android:text="Help &amp; Support"
+                android:onClick="onButtonClick"
+                app:icon="@drawable/ic_service_type"/>
+
+        </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
